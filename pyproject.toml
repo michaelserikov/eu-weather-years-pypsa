@@ -1,0 +1,14 @@
+[project]
+name = "weatheryears"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["pypsa", "highspy", "pandas", "numpy", "matplotlib"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
